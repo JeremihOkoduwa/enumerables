@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj": {}
+    "C:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj": {}
   },
   "projects": {
-    "c:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj": {
+    "C:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj",
+        "projectUniqueName": "C:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj",
         "projectName": "IEnumerable",
-        "projectPath": "c:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj",
+        "projectPath": "C:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\IEnumerable.csproj",
         "packagesPath": "C:\\Users\\JEREMIAH\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\obj\\",
+        "outputPath": "C:\\Users\\JEREMIAH\\source\\repos\\IEnumerable\\IEnumerable\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,6 +19,38 @@ namespace IEnumerable
             }
         }
 
+        public static IEnumerable<TSource> Filter<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
+        {
+            var list = new List<TSource>();
+
+            foreach (var item in source)
+            {
+                if (predicate(item))
+                {
+                    list.Add(item);
+                }
+            }
+
+            return list;
+
+        }
+        public static int Counts<T>(this IEnumerable<T> obj)
+        {
+            try
+            {
+                var count = 0;
+                foreach (var item in obj)
+                {
+                    count += 1;
+                }
+                return count;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         public static int Stringify(this string obj)
         {
             var res = obj.ToCharArray().Length-1;

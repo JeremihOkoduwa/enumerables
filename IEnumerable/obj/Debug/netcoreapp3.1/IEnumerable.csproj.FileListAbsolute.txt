@@ -4,10 +4,12 @@ C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\I
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\IEnumerable.runtimeconfig.dev.json
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\IEnumerable.dll
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\IEnumerable.pdb
-C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.csprojAssemblyReference.cache
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.AssemblyInfoInputs.cache
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.AssemblyInfo.cs
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.csproj.CoreCompileInputs.cache
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.dll
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.pdb
 C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.genruntimeconfig.cache
+C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\obj\Debug\netcoreapp3.1\IEnumerable.csproj.AssemblyReference.cache
+C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\fuel.csv
+C:\Users\JEREMIAH\source\repos\IEnumerable\IEnumerable\bin\Debug\netcoreapp3.1\manufacturers.csv
