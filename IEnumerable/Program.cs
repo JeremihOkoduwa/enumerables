@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using IEnumerable;
+
 
 namespace IEnumerable
 {
@@ -10,9 +12,29 @@ namespace IEnumerable
     {
         static void Main(string[] args)
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CarsDb>()); 
+            
             var cars = ProcessCsvFile("fuel.csv");
+            InsertCars(cars);
             var manufacturer = ProcessManufactures("manufacturers.csv");
+            var groupCars = cars.GroupBy(x => x.Manufacturer).Select(x =>
+            {
+                var result = x.Aggregate(new CarStatistics(), (acc, c) => acc.Accumulate(c), acc => acc.Compute());
+               
+                return new
+                {
 
+                    Name = x.Key,
+                    Average = result.Average,
+                    Min = result.MinValue,
+                    Max = result.MaxValue
+                };
+            }).OrderByDescending(x => x.Max);
+
+            foreach (var item in groupCars)
+            {
+                Console.WriteLine($"{item.Name}, {item.Max}");
+            }
             var joined = cars.Join(manufacturer, x => new { x.Manufacturer, x.Year}, m =>new { Manufacturer = m.Name,  m.Year}, (x, m) => new
             {
                 m.Headquaters,
@@ -91,6 +113,20 @@ namespace IEnumerable
             //} while (!startingDeck.SequenceEquals(shuffle));
 
             //Console.WriteLine(times);
+        }
+
+        private static void InsertCars(List<Car> cars)
+        {
+            var db = new CarsDb();
+            if (!db.Cars.Any())
+            {
+                foreach (var item in cars)
+                {
+                    db.Cars.Add(item);
+                    Console.WriteLine("Item added");
+                }
+                db.SaveChanges();
+            }
         }
 
         private static List<Manufacturers> ProcessManufactures(string path)
